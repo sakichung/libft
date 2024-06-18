@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:25:19 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 15:29:33 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 17:29:41 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char*s, int c)
 	{
 		i++;
 	}
-	while (i > 0)
+	while (i >= 0)
 	{
 		if (s[i] == (unsigned char)c)
 		{
