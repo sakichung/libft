@@ -6,13 +6,13 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:25 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 14:13:18 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:44:00 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
 

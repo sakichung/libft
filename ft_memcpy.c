@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:52 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 14:25:10 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 15:03:23 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	{
 		return (NULL);
 	}
-	while(n > 0)
+	while (n > 0)
 	{
 		dst_char[i] = src_char[i];
 		i++;
 		n--;
 	}
-	return(dst);
+	return (dst);
 }

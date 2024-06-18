@@ -6,17 +6,17 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:21 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 14:17:34 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:54:35 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if ((int) ' ' <= c && c <= (int) '~')
 	{
-		return(16384);
+		return (16384);
 	}
-	return (0);	
+	return (0);
 }

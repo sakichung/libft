@@ -17,6 +17,9 @@ $(NAME): $(OBJ)
 $(OBJ): %.o: %.c
 	$(CC) $(CFLAGS) $(HDRS) -c $< -o $@ 
 
+clean:
+	rm -f $(OBJ)
+
 fclean: clean
 	rm -f $(NAME)
 

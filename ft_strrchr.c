@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:25:19 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 14:39:01 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 15:29:33 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,19 +17,17 @@ char	*ft_strrchr(const char*s, int c)
 	int	i;
 
 	i = 0;
-	while(s[i]!='\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
-	while(i > 0)
+	while (i > 0)
 	{
-		if(s[i]==(unsigned char)c)
+		if (s[i] == (unsigned char)c)
 		{
-			//見つかった文字へのポインタを返します。
 			return ((char *)s + i);
 		}
 		i--;
-    }
-    //文字が文字列に存在しない場合は NULL を返します。
-    return NULL;
+	}
+	return (NULL);
 }
