@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:56 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 15:59:20 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 17:07:25 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char	*dst_char;
 	unsigned char	*src_char;
 
+	if (dst == NULL && src == NULL)
+		return (NULL);
 	dst_char = (unsigned char *)dst;
 	src_char = (unsigned char *)src;
 	i = 0;
-	if (src < dst)
+	while (src < dst && len >= 1)
 	{
-		while (len >= 1)
-		{
-			dst_char[len - 1] = src_char[len - 1];
-			len--;
-		}
+		dst_char[len - 1] = src_char[len - 1];
+		len--;
 	}
-	else
+	while (src >= dst && i < len)
 	{
-		while (i < len)
-		{
-			dst_char[i] = src_char[i];
-			i++;
-		}
+		dst_char[i] = src_char[i];
+		i++;
 	}
 	return ((void *)dst_char);
 }
