@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-
-
 int	ft_isdigit(int a)
 {
 	if (a >= '1' && a <= '9')
