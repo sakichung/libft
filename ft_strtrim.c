@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:00 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 15:33:46 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 19:08:54 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
-	if (is_in_set(s1[start], set))
+	while (is_in_set(s1[start], set))
 	{
 		start++;
 	}
 	end = ft_strlen(s1);
-	if (end > 0 && is_in_set(s1[end - 1], set))
+	while (end > 0 && is_in_set(s1[end - 1], set))
 	{
 		end--;
 	}
