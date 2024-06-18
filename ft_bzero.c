@@ -6,19 +6,17 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:25 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:22:44 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 17:00:34 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_bzero(void *s,size_t n){
+#include "libft.h"
 
-//n がゼロの場合、bzero() は何もしません。
-if(n==0){
-return 0;
-}
+void	ft_bzero(void *s, size_t n)
+{
+	unsigned char	*ptr;
 
-//bzero() 関数は、n バイトをゼロクリアして文字列 s に書き込みます。
-// sを事前に型変換する必要がある
-s[n]='\0';
-
+	ptr = (unsigned char *) s;
+	while (n--)
+		*ptr++ = 0;
 }

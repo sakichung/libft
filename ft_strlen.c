@@ -6,19 +6,20 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:56 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:57 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 15:22:30 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlen(const char*s){
+#include "libft.h"
 
-size_t i;
-i=0;
+size_t	ft_strlen(const char*s)
+{
+	size_t	i;
 
-while(s[i]!='\0'){
-i++;
-}
-
-return(i);
-
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }

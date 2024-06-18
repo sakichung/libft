@@ -6,39 +6,28 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:48 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:49 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 19:15:58 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcat(char * dst, const char * src, size_t dstsize){
+#include "libft.h"
 
-size_t i=0;
-size_t j=0;
-size_t dstlen=0;
-size_t srclen=0;
-size_t size=dstsize;
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+	size_t	dstlen;
+	size_t	srclen;
+	size_t	i;
 
-while(src[srclen]!='\0'){
-srclen++;
+	dstlen = ft_strlen(dst);
+	srclen = ft_strlen(src);
+	if (dstsize <= dstlen)
+		return (srclen + dstsize);
+	i = 0;
+	while (src[i] && dstlen + i < dstsize - 1)
+	{
+		dst[dstlen + i] = src[i];
+		i++;
+	}
+	dst[dstlen + i] = '\0';
+	return (dstlen + srclen);
 }
-
-if(dst==NULL && dstsize==0){
-return srclen;
-}
-
-while(dst[dstlen]!='\0'){
-dstlen++;
-}
-
-while(dstsize>dstlen)
-{dst[dstlen+i]=src[j];
-i++;
-j++;
-dstsize--;
-}
-
-
-return(srclen+size);
-}
-
-

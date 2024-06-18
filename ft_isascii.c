@@ -6,14 +6,20 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:19:42 by PuiTing           #+#    #+#             */
-/*   Updated: 2024/06/18 22:23:07 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:53:40 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c){
-if(c>=0&&c<=127){
-return(1);
-}else{
-return(0);
-}
+#include "libft.h"
+
+int	ft_isascii(int c)
+{
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
