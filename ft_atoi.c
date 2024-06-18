@@ -6,9 +6,11 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:16 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:22:39 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:14:04 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	signs(char *str, int *atoi_i)
 {
@@ -29,14 +31,14 @@ int	signs(char *str, int *atoi_i)
 	return (count);
 }
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	sign;
 	int	result;
 	int	i;
 
 	result = 0;
-	sign = signs(str, &i);
+	sign = signs((char *) str, &i);
 	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
 		result *= 10;

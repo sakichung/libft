@@ -6,18 +6,20 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:53 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:22:54 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:14:30 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c){
+#include "libft.h"
 
-//return(ft_isalpha(c)||ft_isdigit(c));
+int ft_isalnum(int c)
+{
+	//return(ft_isalpha(c)||ft_isdigit(c));
+	//isalnumと同様な処理なら8を戻す
 
-//isalnumと同様な処理なら8を戻す
-if((c>='A'&&c<='Z')||(c>='a'&&c<='z')||(c>=0&&c<=9)){
-return(8);
+	if((c>='A'&&c<='Z')||(c>='a'&&c<='z')||(c>=0&&c<=9)){
+		return(8);
 
-}
-
+	}
+	return (0);
 }

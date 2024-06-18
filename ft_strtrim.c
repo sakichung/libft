@@ -6,14 +6,15 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:00 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:25:24 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:39:10 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /*#include<stdbool.h>
 //使っていいだっけ？*/
 
-#include <stdlib.h>
 
 // ヘルパー関数：指定された文字がsetに含まれているか確認
 int is_in_set(char c, const char *set) {
@@ -42,7 +43,7 @@ char *ft_strtrim(char const *s1, char const *set) {
     }
 
     // 末尾文字をチェック
-    end = strlen(s1);
+    end = ft_strlen(s1);
     if (end > 0 && is_in_set(s1[end - 1], set)) {
         end--;
     }

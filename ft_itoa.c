@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:27 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:23:29 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 13:59:44 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 // ヘルパー関数：整数の桁数を計算する
 static size_t get_num_len(int n) {

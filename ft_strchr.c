@@ -6,32 +6,26 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:28 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:29 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:35:25 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// ft_strchr
-char*ft_strchr(const char*s,int c){
+#include "libft.h"
 
-int i;
-i=0;
+char	*ft_strchr(const char *s, int c)
+{
+	int	i;
 
-while(s[i]!='\0'){
-	
-	if(s[i]==(unsigned char)c){
-		//見つかった文字へのポインタを返します。
-		return (s+i);
+	i = 0;
+	while (s[i]!='\0')
+	{
+		if (s[i] == (unsigned char) c)
+		{
+			//見つかった文字へのポインタを返します。
+			return ((char *)s + i);
+		}
+		i ++;
 	}
-	i++;
-	}
-	
-	/*終端のヌル文字は文字列の一部と見なされるため、c が `\0' の場合、
-この関数は終端の `\0' を見つけます。*/
-	if((unsigned char)c==NULL){
-	return i;
-	}
-	
 	//文字が文字列に存在しない場合は NULL を返します。
-	return NULL;
-	
-	}
+	return (NULL);
+}

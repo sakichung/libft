@@ -6,11 +6,13 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:25:15 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:25:16 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:35:55 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char ft_strnstr(const char *haystack, const char *needle, size_t len) {
+#include "libft.h"
+
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len) {
     size_t i = 0;
     size_t j;
 

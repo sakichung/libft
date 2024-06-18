@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:25:29 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:25:30 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:02:27 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_substr(char const *s, unsigned int start, size_t len) {
     char *substr;

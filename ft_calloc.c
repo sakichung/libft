@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:49 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:22:50 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 13:59:20 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void *ft_calloc(size_t count, size_t size){
 

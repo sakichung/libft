@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:25:05 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:25:06 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:01:56 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 // ft_strmapi関数の実装
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char)) {

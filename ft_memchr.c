@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:39 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:23:41 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 13:59:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void*ft_memchr(const void *s,int c,size_t n)
 {

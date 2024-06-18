@@ -6,25 +6,26 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:46 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:23:47 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:20:29 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_memcmp(const void *s1, const void *s2, size_t n){
-unsigned int s1len=0;
-unsigned int s2len=0;
+#include "libft.h"
 
-while(s1[s1len]!='\0'){
-s1len++;
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	size_t			i;
+	unsigned char	*string1;
+	unsigned char	*string2;
+
+	string1 = (unsigned char *) s1;
+	string2 = (unsigned char *) s2;
+	i = 0;
+	while (i < n)
+	{
+		if (string1[i] != string2[i])
+			return ((int) string1[i] - (int)string2[i]);
+		i ++;
+	}
+	return (0);
 }
-
-while(s1[s2len]!='\0'){
-s2len++;
-}
-// 一文字ずつ比較する必要がある
-// if (s1[i] == s2[i])みたいに
-int i=(int)(s1len-s2len);
-
-return i;
-}
-

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:19 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:21 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:00:10 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strjoin(char const *s1,char const *s2){
 

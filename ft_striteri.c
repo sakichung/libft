@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
+/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:38 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:39 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:00:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void ft_striteri(char *s, void (*f)(unsigned int, char*)) {
     size_t i;

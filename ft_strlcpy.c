@@ -6,12 +6,14 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:24:52 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 22:24:53 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 14:10:52 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 // 全角スペースが入っている
-size_t　ft_strlcpy(char *dst, const char *src, size_t dstsize) {
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize) {
     size_t i = 0;
     size_t srclen = 0;
 
