@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:22:25 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 14:44:00 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 17:00:34 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*p;
+	unsigned char	*ptr;
 
-	p = (unsigned char *)s;
-	if (n == 0)
-	{
-		return ;
-	}
-	p[n] = '\0';
+	ptr = (unsigned char *) s;
+	while (n--)
+		*ptr++ = 0;
 }
