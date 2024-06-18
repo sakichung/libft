@@ -1,46 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 22:24:19 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 16:13:43 by pchung           ###   ########.fr       */
+/*   Created: 2024/06/18 16:06:59 by pchung            #+#    #+#             */
+/*   Updated: 2024/06/18 16:13:00 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char	**arr;
-	size_t	i;
-	size_t	j;
-	size_t	k;
+	unsigned int	nbr;
 
-	if (!s)
-		return (NULL);
-	arr = (char **)malloc(sizeof(char *) * (ft_strlen(s) + 1));
-	if (!arr)
-		return (NULL);
-	i = 0;
-	j = 0;
-	while (s[i])
+	if (n < 0)
 	{
-		while (s[i] == c)
-			i++;
-		k = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > k)
-		{
-			arr[j] = ft_substr(s, k, i - k);
-			if (!arr[j])
-				return (NULL);
-			j++;
-		}
+		ft_putchar_fd('-', fd);
+		nbr = (unsigned int)(-n);
 	}
-	arr[j] = NULL;
-	return (arr);
+	else
+		nbr = (unsigned int)n;
+	if (nbr >= 10)
+		ft_putnbr_fd(nbr / 10, fd);
+	ft_putchar_fd(nbr % 10 + '0', fd);
 }

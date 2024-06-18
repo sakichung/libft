@@ -1,46 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 22:24:19 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 16:13:43 by pchung           ###   ########.fr       */
+/*   Created: 2024/06/18 16:07:09 by pchung            #+#    #+#             */
+/*   Updated: 2024/06/18 16:11:26 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	char	**arr;
-	size_t	i;
-	size_t	j;
-	size_t	k;
-
 	if (!s)
-		return (NULL);
-	arr = (char **)malloc(sizeof(char *) * (ft_strlen(s) + 1));
-	if (!arr)
-		return (NULL);
-	i = 0;
-	j = 0;
-	while (s[i])
-	{
-		while (s[i] == c)
-			i++;
-		k = i;
-		while (s[i] && s[i] != c)
-			i++;
-		if (i > k)
-		{
-			arr[j] = ft_substr(s, k, i - k);
-			if (!arr[j])
-				return (NULL);
-			j++;
-		}
-	}
-	arr[j] = NULL;
-	return (arr);
+		return ;
+	while (*s)
+		ft_putchar_fd(*s++, fd);
 }

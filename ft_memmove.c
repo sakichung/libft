@@ -6,13 +6,13 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/18 22:23:56 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 15:04:10 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 15:59:20 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memmove(void *dst, const void *src, size_t len)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t			i;
 	unsigned char	*dst_char;
