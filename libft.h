@@ -6,7 +6,7 @@
 /*   By: pchung <pchung@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 19:33:38 by pchung            #+#    #+#             */
-/*   Updated: 2024/06/18 17:05:17 by pchung           ###   ########.fr       */
+/*   Updated: 2024/06/18 18:15:05 by pchung           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdint.h>
+# include <limits.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int a);
